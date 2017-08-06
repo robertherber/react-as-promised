@@ -13,6 +13,7 @@ import {
   ShowDialogWithCustomCallbacks,
   ShowRegisteredModal,
   ShowTwoModals,
+  ShowAndCancelLoadingIndicator,
 } from './actions/index';
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
             <img src={logo} className='App-logo' alt='logo' />
             <h2>Welcome to react-as-promised</h2>
           </div>
+          <FlatButton primary onClick={() => this.triggerAction(ShowAndCancelLoadingIndicator)} label='Show loading indicator for 2s' />
           <FlatButton primary onClick={() => this.triggerAction(ShowAndCancelModal)} label='Show modal and cancel promise after 2s' />
           <FlatButton primary onClick={() => this.triggerAction(ShowModalWithTimeout)} label='Show modal with 5s timeout' />
           <FlatButton primary onClick={() => this.triggerAction(ShowModal)} label='Show modal' />

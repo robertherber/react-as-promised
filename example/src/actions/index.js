@@ -3,8 +3,10 @@ import { Manager } from 'react-as-promised';
 import SimpleDialog from '../components/SimpleDialog';
 import DialogWithText from '../components/DialogWithText';
 import DialogWithExternalControl from '../components/DialogWithExternalControl';
+import LoadingIndicator from '../components/LoadingIndicator';
 
 Manager.registerComponent('DialogWithExternalControl', DialogWithExternalControl, ['onProceed'], ['onDismiss']);
+Manager.registerComponent('LoadingIndicator', LoadingIndicator);
 
 const printResolved = value => console.log('Resolved', value),
       printRejected = error => console.log('Rejected', error.message);
@@ -13,6 +15,12 @@ export const ShowAndCancelModal = () => {
   const promise = Manager.present(SimpleDialog)
     .tap(printResolved)
     .tapCatch(printRejected);
+
+  return Promise.delay(2000).then(() => promise.cancel());
+};
+
+export const ShowAndCancelLoadingIndicator = () => {
+  const promise = Manager.presentRegistered('LoadingIndicator');
 
   return Promise.delay(2000).then(() => promise.cancel());
 };

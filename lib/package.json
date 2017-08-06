@@ -1,6 +1,6 @@
 {
   "name": "react-as-promised",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple react library for presenting a component inside your control flow. In return you get a Promise for handling the response from the component.",
   "main": "build/index.js",
   "repository": "https://github.com/robertherber/react-as-promised",
@@ -47,13 +47,14 @@
     "eslint-plugin-react-native": "^2.3.2",
     "jest": "^20.0.4",
     "react-native": "^0.47.1",
-    "react-test-renderer": "16"
+    "react-test-renderer": "*"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
     "fbemitter": "^2.1.1",
     "lodash": "^4.17.4",
-    "react": "16"
+    "react": "*",
+    "react-dom": "*"
   },
   "optionalDependencies": {}
 }

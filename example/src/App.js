@@ -37,7 +37,6 @@ class App extends Component {
         <div className='App'>
           <Placeholder />
           <div className='App-header'>
-            <img src={logo} className='App-logo' alt='logo' />
             <h2>Welcome to react-as-promised</h2>
           </div>
           <FlatButton primary onClick={() => this.triggerAction(ShowAndCancelLoadingIndicator)} label='Show loading indicator for 2s' />

@@ -1,5 +1,7 @@
 # react-as-promised
 
+[Demo in Browser](https://robertherber.github.io/react-as-promised)
+
 ## Use case
 Sometimes you want to present UI as part of a control flow (for example inside a redux action creator). This can be overly complicated if you trigger one action from multiple places in your application. react-as-promised makes it easier by providing a way to present UI components with a promise handle.
 

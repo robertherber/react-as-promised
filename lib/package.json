@@ -1,6 +1,6 @@
 {
   "name": "react-as-promised",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple react library for presenting a component inside your control flow. In return you get a Promise for handling the response from the component.",
   "main": "build/index.js",
   "repository": "https://github.com/robertherber/react-as-promised",
@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "eslint src && jest",
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm test && npm run build && cp ../README.md ./",
     "build": "babel src --out-dir build --source-maps"
   },
   "jest": {

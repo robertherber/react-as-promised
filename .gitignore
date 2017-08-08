@@ -8,6 +8,7 @@ node_modules
 
 # production
 lib/build
+lib/README.md
 
 # misc
 .DS_Store

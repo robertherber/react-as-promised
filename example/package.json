@@ -13,7 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && sed -i '' 's/\/static/.\/static/g' build/index.html && sed -i '' 's/\/static/.\/static/g' build/service-worker.js",
+    "build": "rm -rf build && react-scripts build && npm run relative-paths-index && npm run relative-paths-service-worker",
+    "relative-paths-index": "sed -i '' 's/\\/static/.\\/static/g' build/index.html",
+    "relative-paths-service-worker": "sed -i '' 's/\\/static/.\\/static/g' build/service-worker.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "update-src": "cd ../lib && npm run build && cd ../example && yarn add file:../lib",

@@ -1,6 +1,6 @@
 {
   "name": "react-as-promised",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple react library for presenting a component inside your control flow. In return you get a Promise for handling the response from the component.",
   "main": "build/index.js",
   "repository": "https://github.com/robertherber/react-as-promised",

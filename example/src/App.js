@@ -3,7 +3,6 @@ import { Placeholder } from 'react-as-promised';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { FlatButton } from 'material-ui';
 
-import logo from './logo.svg';
 import './App.css';
 import {
   ShowAndCancelModal,

@@ -2,6 +2,9 @@
   "name": "example",
   "version": "0.1.0",
   "private": true,
+  "engines" : {
+    "node" : ">=4"
+  },
   "dependencies": {
     "bluebird": "^3.5.0",
     "material-ui": "^0.18.7",

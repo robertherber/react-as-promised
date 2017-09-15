@@ -10,9 +10,9 @@
     "build"
   ],
   "scripts": {
-    "test": "jest && eslint src && flow .",
+    "test": "jest && eslint src",
     "prepublish": "npm test && npm run build && cp ../README.md ./",
-    "prepush": "npm test",
+    "prepush": "npm test && flow .",
     "build": "rm -rf build && babel src --out-dir build --source-maps"
   },
   "jest": {
@@ -34,7 +34,6 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-react-native": "^2.1.0",
-    "eslint": "3",
     "eslint-config-airbnb": "15",
     "eslint-config-kingstinct-react-native": "^1.0.1",
     "eslint-plugin-flowtype": "^2.33.0",
@@ -44,8 +43,9 @@
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-lodash-fp": "^2.1.3",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.0.1",
     "eslint-plugin-react-native": "^2.3.2",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint": "3",
     "flow-bin": "^0.52.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
@@ -56,8 +56,8 @@
     "bluebird": "^3.5.0",
     "eventemitter3": "^2.0.3",
     "lodash": "^4.17.4",
-    "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react": "*"
   },
   "optionalDependencies": {}
 }

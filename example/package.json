@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prepush": "npm test",
     "build": "rm -rf build && react-scripts build && npm run relative-paths-index && npm run relative-paths-service-worker",
     "relative-paths-index": "sed -i '' 's/\\/static/.\\/static/g' build/index.html",
     "relative-paths-service-worker": "sed -i '' 's/\\/static/.\\/static/g' build/service-worker.js",

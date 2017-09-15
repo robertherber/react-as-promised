@@ -12,6 +12,7 @@
   "scripts": {
     "test": "jest && eslint src && flow .",
     "prepublish": "npm test && npm run build && cp ../README.md ./",
+    "prepush": "npm test",
     "build": "rm -rf build && babel src --out-dir build --source-maps"
   },
   "jest": {

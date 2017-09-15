@@ -1,3 +1,5 @@
+[ ![Codeship Status for robertherber/react-as-promised](https://app.codeship.com/projects/ad274460-7c62-0135-699b-424c23212dd2/status?branch=master)](https://app.codeship.com/projects/245704)
+
 # react-as-promised
 
 [Demo in Browser](https://robertherber.github.io/react-as-promised)

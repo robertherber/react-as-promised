@@ -1,4 +1,6 @@
 [ ![Codeship Status for robertherber/react-as-promised](https://app.codeship.com/projects/ad274460-7c62-0135-699b-424c23212dd2/status?branch=master)](https://app.codeship.com/projects/245704)
+<a href="https://www.npmjs.com/package/react-as-promised"><img src="https://img.shields.io/npm/dm/react-as-promised.svg?maxAge=2592000" alt="npm downloads" style="max-width:100%;"></a>
+<a href="https://www.npmjs.com/package/react-as-promised"><img src="https://img.shields.io/npm/v/react-as-promised.svg?maxAge=2592000" alt="npm version" style="max-width:100%;"></a>
 
 # react-as-promised
 
